@@ -1,0 +1,216 @@
+@font-face {
+    font-family: Quicksand;
+    src: url(../fonts/Quicksand/static/Quicksand-Regular.ttf);
+}
+
+@font-face {
+    font-family: QuicksandSemiBold;
+    src: url(../fonts/Quicksand/static/Quicksand-SemiBold.ttf);
+}
+
+body {
+    background-color: #1c1c1c;
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: Quicksand;
+    font-size: min(124%, 3vw);
+}
+
+p:hover,
+h1:hover {
+    color: #fcd7d8
+}
+
+/* From https://www.steckinsights.com/shorten-length-border-bottom-pure-css/ */
+.link:after {
+    content: "";
+    /* This is necessary for the pseudo element to work. */
+    display: block;
+    /* This will put the pseudo element on its own line. */
+    margin: 0 auto;
+    /* This will center the border. */
+    width: auto;
+    /* Change this to whatever width you want. */
+    padding-top: 0.5em;
+    /* This creates some space between the element and the border. */
+    border-bottom: 0.125em dotted white;
+    /* This creates the border. Replace black with whatever color you want. */
+    border-bottom-width: thin;
+}
+
+.link:not(.soc):not(.active):hover:after {
+    content: "";
+    /* This is necessary for the pseudo element to work. */
+    display: block;
+    /* This will put the pseudo element on its own line. */
+    margin: 0 auto;
+    /* This will center the border. */
+    width: auto;
+    /* Change this to whatever width you want. */
+    padding-top: 0.4em;
+    /* This creates some space between the element and the border. */
+    border-bottom: 0.125em dotted black;
+    /* This creates the border. Replace black with whatever color you want. */
+    border-bottom-width: thin;
+}
+
+a:not(.link) {
+    color: white;
+    text-decoration: none;
+    background-color: none;
+    border-bottom: dotted 0.05em white;
+    padding-bottom: 0.1em;
+    font-size: 1em;
+    font-weight: 700
+}
+
+a:not(.link):hover {
+    color: #fcd7d8;
+    border-bottom: dotted 0.05em #fcd7d8;
+}
+
+.link {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #151515;
+    margin: 0 0 1em 0;
+    padding: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    font-family: QuicksandSemiBold;
+}
+
+
+/* Style the links inside the navigation bar */
+.nav a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 0.75em 1.26em;
+    padding-top: 0.9em;
+    text-decoration: none;
+    font-size: 1.12em;
+}
+
+/* Change the color of links on hover */
+.nav a:hover {
+    background-color: #ffbdbf;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.nav a.active {
+    background-color: #ffbdbf;
+    color: white;
+}
+
+#wrapper {
+    width: 90%;
+    max-width: 550px;
+    margin: 0 auto;
+    padding-top: 8%;
+}
+
+.with-links p {
+    display: inline-block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+
+.socials {
+    display: flex;
+    justify-content: left;
+    font-family: QuicksandSemiBold;
+}
+
+.socials a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 1em 0;
+    padding-right: 1.5em;
+    text-decoration: none;
+}
+
+.soc:hover {
+    color: #ffbdbf;
+    text-align: center;
+    padding: 0.9em 0;
+    padding-right: 1.5em;
+    text-decoration: none;
+}
+
+.soc:hover:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    padding-top: 0.5em;
+    border-bottom: 0.125em dotted #fcd7d8;
+    border-bottom-width: thin;
+}
+
+.socials i {
+    padding-right: 0.4em;
+}
+
+/* Projects page */
+
+#project-wrapper {
+    width: 70%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 1%;
+    margin-left: 26vw;
+}
+
+/* From https://css-tricks.com/snippets/css/prevent-long-urls-from-breaking-out-of-container/ */
+.permalink {
+    /* These are technically the same, but use both */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+
+    -ms-word-break: break-all;
+    /* This is the dangerous one in WebKit, as it breaks things wherever */
+    word-break: break-all;
+    /* Instead use this non-standard one: */
+    word-break: break-word;
+
+    /* Adds a hyphen where the word breaks, if supported (No Blink) */
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+
+.description {
+    padding: 1em;
+    padding-top: 0.65em;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.example img {
+    width: 3.05em;
+    height: 3.05em;
+    float: left;
+    padding-left: 1.5em;
+    padding-top: 1.4em;
+}
+
+/* Table of contents */
+
+#toc {
+    position: fixed;
+    margin-top: 5%;
+    padding-left: 0.8em;
+    font-size: min(100%, 2vw);
+}
+
+#toc p {
+    margin-left: 1.4em;
+}
