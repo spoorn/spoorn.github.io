@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="assets/css/icons-minecraft-0.5.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+        <script src="js/projects.js" type="text/javascript" defer></script>
 	</head>
     
 	<body>
@@ -42,33 +43,13 @@
 
                     <!-- Minecraft Mods -->
 
-                    <h2 id="highlights"><i class="fa fa-paw"></i>  Highlights</h2>
-                    <section class="with-links">
-                        <p>What I'm currently actively developing, or some bigger more popular projects</p>
-                        <section class="example">
-                            <img src="assets/images/durian.png" alt="durian">
-                            <div class="description">
-                                <p><a href="https://github.com/spoorn/durian">durian</a></p>
-                                <p>durian is an open source client-server networking library built on top of the QUIC protocol which is implemented in Rust by quinn.</p>
-                                <p>It provides a thin abstraction layer above the lower-level details of connection management, byte management, framing, and more, to make writing netcode easier and allow the user to focus on the messaging contents instead. Serialization and deserialization are built into the APIs so you can send and receive exact Packets as structs for ease of development.</p>
-                                <p>durian is a general purpose library, but was made primarily for me to dabble in game development. It has been tested and working with the Bevy game engine.</p>
-                                <div style="white-space: pre-wrap">
-<p>Full Rust documentation can be found at&nbsp;</p><a href="https://docs.rs/durian/latest/durian/">https://docs.rs/durian/latest/durian/</a>
-<p>Crates.io:&nbsp;</p><a href="https://crates.io/crates/durian/">https://crates.io/crates/durian/</a>
-                                </div>
-                            </div>
+                    <div id="highlights">
+                        <h2><i class="fa fa-paw"></i>  Highlights</h2>
+                        <section class="with-links">
+                            <p>What I'm currently actively developing, or some bigger more popular projects</p>
+                            <!--inject js-->
                         </section>
-
-                        <section class="example">
-                            <img src="assets/images/mango-png-icon-25.png" alt="mango">
-                            <div class="description">
-                                <p><a href="https://github.com/spoorn/mangovillage">Mango Village</a></p>
-                                <p>In progress 2D Pixel MMORPG, using my own client-server networking library durian (see above), fully 100% in Rust.</p>
-                                <p>Uses the Bevy game engine (ECS), rapier physics engine, and others.  My intention for this project is to learn developing games fully end to end, and be a proof of concept for using Rust in a complex multiplayer game.</p>
-                                <p>My dream is to reinvigorate the MMO/RPG genre where many people, including myself, fell in love with gaming.</p>
-                            </div>
-                        </section>
-                    </section>
+                    </div>
 
                     <h2 id="minecraft-mods"><i class="icon-minecraft icon-minecraft-diamond-pickaxe"></i>  Minecraft Mods</h2>
                     <section class="with-links minecraft">
@@ -252,52 +233,31 @@
 
                     <!-- Rust Projects -->
 
-                    <h2 id="rust-projects"><i class="fa-brands fa-rust"></i>  Rust Projects</h2>
-                    <section class="with-links">
-                        <p>Various Rust projects I worked on, some pubished to </p>
-                        <p><a href="https://crates.io/users/spoorn">crates.io</a></p>
-                        <p>.</p>
-                        <section class="example">
-                            <img src="assets/images/durian.png" alt="durian">
-                            <div class="description">
-                                <p><a href="https://github.com/spoorn/durian">durian</a></p>
-                                <p>durian is an open source client-server networking library built on top of the QUIC protocol which is implemented in Rust by quinn.</p>
-                                <p>It provides a thin abstraction layer above the lower-level details of connection management, byte management, framing, and more, to make writing netcode easier and allow the user to focus on the messaging contents instead. Serialization and deserialization are built into the APIs so you can send and receive exact Packets as structs for ease of development.</p>
-                                <p>durian is a general purpose library, but was made primarily for me to dabble in game development. It has been tested and working with the Bevy game engine.</p>
-                                <div style="white-space: pre-wrap">
-<p>Full Rust documentation can be found at&nbsp;</p><a href="https://docs.rs/durian/latest/durian/">https://docs.rs/durian/latest/durian/</a>
-<p>Crates.io:&nbsp;</p><a href="https://crates.io/crates/durian/">https://crates.io/crates/durian/</a>
-                                </div>
-                            </div>
-                        </section>
+                    <div id="rust-projects">
+                        <h2><i class="fa-brands fa-rust"></i>  Rust Projects</h2>
+                        <section class="with-links">
+                            <p>Various Rust projects I worked on, some published to </p>
+                            <p><a href="https://crates.io/users/spoorn">crates.io</a></p>
+                            <p>.</p>
 
-                        <section class="example">
-                            <img src="assets/images/mango-png-icon-25.png" alt="mango">
-                            <div class="description">
-                                <p><a href="https://github.com/spoorn/mangovillage">Mango Village</a></p>
-                                <p>In progress 2D Pixel MMORPG, using my own client-server networking library durian (see above), fully 100% in Rust.</p>
-                                <p>Uses the Bevy game engine (ECS), rapier physics engine, and others.  My intention for this project is to learn developing games fully end to end, and be a proof of concept for using Rust in a complex multiplayer game.</p>
-                                <p>My dream is to reinvigorate the MMO/RPG genre where many people, including myself, fell in love with gaming.</p>
-                            </div>
+                            <section class="example">
+                                <img src="assets/images/happydance.png" alt="media-to-ascii">
+                                <div class="description">
+                                    <p><a href="https://github.com/spoorn/media-to-ascii">media-to-ascii</a></p>
+                                    <p>CLI and utilities for converting media files (images/videos) to ascii outputs (output media file or print to console).
+                                        Supports most standard image formats, and some video formats.</p>
+                                </div>
+                            </section>
+                            <section class="example">
+                                <img src="assets/images/reddit-logo.png" alt="RedditNotifier">
+                                <div class="description">
+                                    <p><a href="https://github.com/spoorn/RedditNotifier">RedditNotifier</a></p>
+                                    <p>Simple script that queries and scrapes a Reddit subreddit for new listings that match a given regex (regular expression). The script will print out any matching listings, and can be setup to notify via email or text whenever a match is found.</p>
+                                    <p>Same as the Python section, except I also wrote it in Rust for fun :)</p>
+                                </div>
+                            </section>
                         </section>
-                        
-                        <section class="example">
-                            <img src="assets/images/happydance.png" alt="media-to-ascii">
-                            <div class="description">
-                                <p><a href="https://github.com/spoorn/media-to-ascii">media-to-ascii</a></p>
-                                <p>CLI and utilities for converting media files (images/videos) to ascii outputs (output media file or print to console).
-                                    Supports most standard image formats, and some video formats.</p>
-                            </div>
-                        </section>
-                        <section class="example">
-                            <img src="assets/images/reddit-logo.png" alt="RedditNotifier">
-                            <div class="description">
-                                <p><a href="https://github.com/spoorn/RedditNotifier">RedditNotifier</a></p>
-                                <p>Simple script that queries and scrapes a Reddit subreddit for new listings that match a given regex (regular expression). The script will print out any matching listings, and can be setup to notify via email or text whenever a match is found.</p>
-                                <p>Same as the Python section, except I also wrote it in Rust for fun :)</p>
-                            </div>
-                        </section>
-                    </section>
+                    </div>
 
                     <!-- Java Projects -->
 
