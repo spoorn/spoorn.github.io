@@ -20,7 +20,7 @@ mangovillageTemplate.innerHTML = `
 <section class="example">
     <img src="assets/images/mango-png-icon-25.png" alt="mango">
     <div class="description">
-        <p><a href="https://github.com/spoorn/mangovillage">Mango Village</a></p>
+        <p id="mangovillage-anchor"><a href="https://github.com/spoorn/mangovillage">Mango Village</a> - <a href="showcase.html#showcase-mangovillage" class="showcase-link">(Showcase)</a></p>
         <p>&nbsp;</p>
         <p>In progress 3D Pixel MMORPG, using my own client-server networking library durian, fully 100% in Rust.</p>
         <p>Uses the Bevy game engine (ECS), rapier physics engine, blender for 3d modeling, and others.  My intention for this project is to learn developing games fully end to end, and be a proof of concept for using Rust in a complex multiplayer game.</p>

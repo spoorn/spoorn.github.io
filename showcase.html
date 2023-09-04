@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>projects</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <script src="js/showcase.js" type="text/javascript" defer></script>
+
+        <!-- https://swiperjs.com/get-started#use-swiper-from-cdn -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+        <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    </head>
+
+    <!-- Header -->
+    <div class="header">
+
+        <!-- Nav -->
+        <nav class="nav">
+            <a class="link" href="index.html">About Me</a>
+            <a class="link" href="projects.html">Projects</a>
+            <a class="active link" href="showcase.html">Showcase</a>
+            <!-- <a class="link" href="contacts.html">Contact</a> -->
+        </nav>
+
+    </div>
+
+
+    <div id="showcase-wrapper">
+        <div class="page-content">
+            <div class="section-wrapper">
+                <h1>Projects Showcase</h1>
+                <p>Below are some showcases for various projects I've worked on.</p>
+
+                <hr>
+
+                <section id="showcase-mangovillage" class="with-links">
+                    <h2><a href="projects.html#highlights">Mango Village</a></h2>
+                    <video style="width: 100%;" autoplay loop muted><source src="assets/videos/mangovillageclip1.mp4" type=video/mp4></video>
+                    <br>
+                    <p>Example clip showcasing some game mechanics implemented.</p>
+                    <br>
+                    <p>Looks simple, but there's a lot going on in the background here!</p>
+                    <ul>
+                        <li>Multiplayer with a client/server architecture, using <a href="projects.html#highlights">durian</a> as the networking library.  All the movement and physics is being calculated on the server and sent to the client for rendering.</li>
+                        <li>Physics system, powered by <a href="https://github.com/dimforge/bevy_rapier">bevy_rapier</a>, an impulse based physics simulator.  The player is modeled as a character controller, with a custom collision system.</li>
+                        <li>Pan-orbit camera system with 3d controls, and a locked follow camera mode on the player</li>
+                        <li>Meshes are generated as .gltf/.glb files from Blender models</li>
+                        <li>All built on top of the <a href="https://bevyengine.org/">Bevy</a> game engine under an Entity Component System (ECS) architecture.</li>
+                    </ul>
+                </section>
+
+                <hr>
+
+                <section id="showcase-donut" class="with-links">
+                    <h2>Blender donut</h2>
+                    <video style="width: min(480px, 100%);" autoplay loop muted><source src="assets/videos/donut.mp4" type=video/mp4></video>
+                    <br>
+                    <p>Rendered in Blender 3.6.1 LTS, following the classic</p>
+                    <a href="https://www.youtube.com/playlist?list=PLjEaoINr3zgFX8ZsChQVQsuDSjEqdWMAD">Blender Donut Tutorial</a>
+                </section>
+
+                <hr>
+
+                <section id="showcase-spoornbountymobs" class="with-links">
+                    <h2><a href="projects.html#minecraft-mods">Spoorn Bounty Mobs</a></h2>
+
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide"><video style="width: 100%;" autoplay loop muted><source src="assets/videos/spoornbountymobs1.mp4" type=video/mp4></video></div>
+                            <div class="swiper-slide"><video style="width: 100%;" autoplay loop muted><source src="assets/videos/spoornbountymobs2.mp4" type=video/mp4></video></div>
+                            <div class="swiper-slide"><video style="width: 100%;" autoplay loop muted><source src="assets/videos/spoornbountymobs3.mp4" type=video/mp4></video></div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                        <!-- If we need scrollbar -->
+                        <!-- <div class="swiper-scrollbar"></div> -->
+                    </div>
+                </section>
+
+                <br>
+                <hr>
+
+                <section id="showcase-myloot" class="with-links">
+                    <h2><a href="projects.html#minecraft-mods">myLoot</a></h2>
+
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide"><video style="width: 100%;" autoplay loop muted><source src="assets/videos/myLoot1.mp4" type=video/mp4></video></div>
+                            <div class="swiper-slide"><img style="width: 83%" src="assets/images/myLoot1.png" alt="myLoot2"></div>
+                            <div class="swiper-slide"><img style="width: 77%" src="assets/images/myLoot2.png" alt="myLoot3"></div>
+                            <div class="swiper-slide"><img style="width: 83%" src="assets/images/myLoot3.png" alt="myLoot4"></div>
+                            <div class="swiper-slide"><img style="width: 77%" src="assets/images/myLoot4.png" alt="myLoot5"></div>
+                            <div class="swiper-slide"><img style="width: 94%" src="assets/images/myLoot5.png" alt="myLoot6"></div>
+                            <div class="swiper-slide"><img style="width: 63%" src="assets/images/myLoot6.png" alt="myLoot7"></div>
+                            <div class="swiper-slide"><img style="width: 88%" src="assets/images/myLoot7.png" alt="myLoot8"></div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                        <!-- If we need scrollbar -->
+                        <!-- <div class="swiper-scrollbar"></div> -->
+                    </div>
+
+                    <br>
+                    <p>Pixel art hand draw in photoshop</p>
+                </section>
+
+                <hr>
+
+                <section id="showcase-pink" class="with-links">
+                    <h2><a href="projects.html#minecraft-mods">Pink</a></h2>
+
+                    <img style="width: 100%;" src="assets/images/pink7.png" alt="pink7">
+
+                    <!-- Slider main container -->
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide"><img src="assets/images/pink1.jpg" alt="pink1"></div>
+                            <div class="swiper-slide"><img src="assets/images/pink2.jpg" alt="pink2"></div>
+                            <div class="swiper-slide"><img src="assets/images/pink3.jpg" alt="pink3"></div>
+                            <div class="swiper-slide"><img src="assets/images/pink4.jpg" alt="pink4"></div>
+                            <div class="swiper-slide"><img src="assets/images/pink5.jpg" alt="pink5"></div>
+                            <div class="swiper-slide"><img src="assets/images/pink6.jpg" alt="pink6"></div>
+                            <div class="swiper-slide"><img style="width: 84%;" src="assets/images/pink8.png" alt="pink8"></div>
+                            <div class="swiper-slide"><img style="width: 85%;" src="assets/images/pink9.png" alt="pink9"></div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
+                        <!-- If we need scrollbar -->
+                        <!-- <div class="swiper-scrollbar"></div> -->
+                    </div>
+
+                    <img style="width: 30%;" src="assets/images/pink10.png" alt="pink10">
+
+                    <br>
+                    <p>Pixel art hand draw in photoshop</p>
+                </section>
+
+            </div>
+        </div>
+    </div>
+    </body>
+</html>

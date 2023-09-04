@@ -18,7 +18,8 @@ body {
 }
 
 p:hover,
-h1:hover {
+h1:hover,
+li:hover {
     color: #fcd7d8
 }
 
@@ -213,4 +214,44 @@ a:not(.link):hover {
 
 #toc p {
     margin-left: 1.4em;
+}
+
+/* Showcase page */
+
+#showcase-wrapper {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 1%;
+}
+
+a.showcase-link {
+    color: #bcffbd;
+    border-bottom: none;
+}
+
+a.showcase-link:hover {
+    color: #e9d7fc;
+    border-bottom: dotted 0.05em #e9d7fc;
+}
+
+/* Slideshow swiper - https://swiperjs.com/ */
+
+.swiper {
+    width: 100%;
+}
+
+.swiper-slide img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.swiper .swiper-button-next, .swiper .swiper-button-prev {
+    color: #fff;
+}
+
+.swiper .swiper-pagination-bullet-active {
+    background: #fff;
 }
