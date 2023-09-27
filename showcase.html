@@ -44,9 +44,9 @@
                     <br>
                     <p>Looks simple, but there's a lot going on in the background here!</p>
                     <ul>
-                        <li>Multiplayer with a client/server architecture, using <a href="projects.html#highlights">durian</a> as the networking library.  All the movement and physics is being calculated on the server and sent to the client for rendering.</li>
-                        <li>Physics system, powered by <a href="https://github.com/dimforge/bevy_rapier">bevy_rapier</a>, an impulse based physics simulator.  The player is modeled as a character controller, with a custom collision system.</li>
-                        <li>Pan-orbit camera system with 3d controls, and a locked follow camera mode on the player</li>
+                        <li>Multiplayer with a client/server architecture, using <a href="projects.html#highlights">durian</a>, my own library, as the networking layer.  All the movement and physics is being calculated on the server and sent to the client for rendering.</li>
+                        <li>Physics system, powered by <a href="https://github.com/dimforge/bevy_rapier">bevy_rapier</a>, an impulse based physics simulator.  The player is modeled as a character controller, with a custom collision system written by me.  I have also looked into XBPD, but the current resources are still immature.</li>
+                        <li>Implemented my own Pan-orbit camera system with 3d controls, with a locked follow camera mode on the player</li>
                         <li>Meshes are generated as .gltf/.glb files from Blender models</li>
                         <li>All built on top of the <a href="https://bevyengine.org/">Bevy</a> game engine under an Entity Component System (ECS) architecture.</li>
                     </ul>
