@@ -96,7 +96,7 @@ a:not(.link):hover {
     padding: 0.75em 1.26em;
     padding-top: 0.9em;
     text-decoration: none;
-    font-size: 1.12em;
+    font-size: 1em;
 }
 
 /* Change the color of links on hover */
