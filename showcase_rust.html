@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>projects</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="js/showcase.js" type="text/javascript" defer></script>
+
+    <!-- https://swiperjs.com/get-started#use-swiper-from-cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</head>
+
+<!-- Header -->
+<div class="header">
+
+    <!-- Nav -->
+    <nav class="nav">
+        <a class="link" href="index.html">About Me</a>
+        <a class="link" href="projects.html">Projects</a>
+        <a class="link" href="showcase_minecraft.html">Minecraft Showcase</a>
+        <a class="active link" href="showcase_rust.html">Rust Showcase</a>
+        <a class="link" href="showcase_ue5.html">UE5 Showcase</a>
+        <!-- <a class="link" href="contacts.html">Contact</a> -->
+    </nav>
+
+</div>
+
+
+<div id="showcase-wrapper">
+    <div class="page-content">
+        <div class="section-wrapper">
+            <h1>Rust Showcase</h1>
+            <section class="with-links">
+                <p>I started learning Rust to dive into game development using the ECS (Entity Component System) pattern, a data driven approach which naturally presents itself when using Rust.  It has been an absolute joy and pushed me through a journey across many Rust projects.</p>
+                <p>All my personal Rust projects are open source on my </p>
+                <a href="https://github.com/spoorn?tab=repositories">github</a>
+                <p>I also have professional industry experience with Rust on satellite embedded software</p>
+            </section>
+
+            <br>
+            <hr>
+            <br>
+
+            <section id="showcase-mangovillage" class="with-links">
+                <h2><a href="projects.html#highlights">Mango Village</a></h2>
+                <video style="width: 100%;" playsinline autoplay loop muted><source src="assets/videos/mangovillageclip1.mp4" type=video/mp4></video>
+                <br>
+                <p>Example clip showcasing some game mechanics implemented.</p>
+                <br>
+                <p>Looks simple, but there's a lot going on in the background here!</p>
+                <ul>
+                    <li>Multiplayer with a client/server architecture, using <a href="projects.html#highlights">durian</a>, my own library, as the networking layer.  All the movement and physics is being calculated on the server and sent to the client for rendering.</li>
+                    <li>Physics system, powered by <a href="https://github.com/dimforge/bevy_rapier">bevy_rapier</a>, an impulse based physics simulator.  The player is modeled as a character controller, with a custom collision system written by me.  I have also looked into XBPD, but the current resources are still immature.</li>
+                    <li>Implemented my own Pan-orbit camera system with 3d controls, with a locked follow camera mode on the player</li>
+                    <li>Meshes are generated as .gltf/.glb files from Blender models</li>
+                    <li>All built on top of the <a href="https://bevyengine.org/">Bevy</a> game engine under an Entity Component System (ECS) architecture.</li>
+                </ul>
+            </section>
+
+            <br>
+            <hr>
+            <br>
+
+            <section id="showcase-mediatoascii" class="with-links">
+                <h2><a href="projects.html#minecraft-mods">media-to-ascii Examples</a></h2>
+
+                <video style="width: 50%;" src="assets/videos/mediatoascii1.mp4" playsinline autoplay loop muted></video>
+                <br>
+                <p>Ascii videos!?!???!?</p>
+                <br>
+                <img style="width: 50%;" src="assets/images/mediatoascii1.jpg" alt="mediatoascii">
+                <img style="width: 100%;" src="assets/images/mediatoascii2.jpg" alt="mediatoascii">
+                <br>
+                <p>And high quality ascii images of course</p>
+            </section>
+
+            <br>
+            <hr>
+            <br>
+
+            <section id="showcase-donut" class="with-links">
+                <h2>Blender donut</h2>
+                <video style="width: 40%;" playsinline autoplay loop muted><source src="assets/videos/donut.mp4" type=video/mp4></video>
+                <br>
+                <p>Rendered in Blender 3.6.1 LTS, following the classic</p>
+                <a href="https://www.youtube.com/playlist?list=PLjEaoINr3zgFX8ZsChQVQsuDSjEqdWMAD">Blender Donut Tutorial</a>
+                <br>
+                <p>Used this to learn some 3d modeling when working on </p>
+                <a href="showcase_rust.html#mango-village>"Mango Village</a>
+            </section>
+
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+</div>
+</body>
+</html>

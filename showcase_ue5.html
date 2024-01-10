@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>projects</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="js/showcase.js" type="text/javascript" defer></script>
+
+    <!-- https://swiperjs.com/get-started#use-swiper-from-cdn -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</head>
+
+<!-- Header -->
+<div class="header">
+
+    <!-- Nav -->
+    <nav class="nav">
+        <a class="link" href="index.html">About Me</a>
+        <a class="link" href="projects.html">Projects</a>
+        <a class="link" href="showcase_minecraft.html">Minecraft Showcase</a>
+        <a class="link" href="showcase_rust.html">Rust Showcase</a>
+        <a class="active link" href="showcase_ue5.html">UE5 Showcase</a>
+        <!-- <a class="link" href="contacts.html">Contact</a> -->
+    </nav>
+
+</div>
+
+
+<div id="showcase-wrapper">
+    <div class="page-content">
+        <div class="section-wrapper">
+            <h1>Unreal Engine 5 Showcase</h1>
+            <section class="with-links">
+                <p>Unreal Engine 5 is quite apparently the AAA industry standard for <i>many</i> game studios now</p>
+                <p>I have played around with a few game engines (UE, Bevy, O3DE, etc.) and UE5, as a public and "open code" game engine, leads the industry in 3D visual fidelity and functionality</p>
+                <p>No choice but to learn some of it &#128514;</p>
+            </section>
+
+            <br>
+            <hr>
+            <br>
+
+            <section id="showcase-ue5rollaball" class="with-links">
+                <h2>C++ Minigame</h2>
+                <video style="width: 100%;" playsinline autoplay loop muted><source src="assets/videos/ue5rollaball.mp4" type=video/mp4></video>
+                <br>
+                <p>Mini Rollaball game using C++ in Unreal Engine 5</p>
+                <ul>
+                    <li>Character movement using keyboard controls</li>
+                    <li>Props with Event based functions (spinning cubes)</li>
+                    <li>Game mode with a Game State</li>
+                    <li>Simple Widget UI with current Game State</li>
+                </ul>
+            </section>
+
+            <br>
+            <hr>
+            <br>
+
+            <section id="showcase-ue5topdown" class="with-links">
+                <h2>Top Down Character in C++</h2>
+                <video style="width: 100%;" playsinline autoplay loop muted><source src="assets/videos/ue5example1.mp4" type=video/mp4></video>
+                <br>
+                <p>A top down Character Controller, Movement, Game Mode, and Camera written in C++</p>
+            </section>
+
+            <br>
+            <hr>
+            <br>
+
+            <section id="showcase-ue5echo" class="with-links">
+                <h2>[In Progress] Comprehensive Action RPG Game Showcase</h2>
+
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img style="width: 83%" src="assets/images/ue5echo/HighresScreenshot00000.png" alt="echo1"></div>
+                        <div class="swiper-slide"><img style="width: 83%" src="assets/images/ue5echo/HighresScreenshot00001.png" alt="echo2"></div>
+                        <div class="swiper-slide"><img style="width: 83%" src="assets/images/ue5echo/HighresScreenshot00002.png" alt="echo3"></div>
+                        <div class="swiper-slide"><img style="width: 83%" src="assets/images/ue5echo/HighresScreenshot00003.png" alt="echo4"></div>
+                        <div class="swiper-slide"><img style="width: 83%" src="assets/images/ue5echo/HighresScreenshot00004.png" alt="echo5"></div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+
+                    <!-- If we need scrollbar -->
+                    <!-- <div class="swiper-scrollbar"></div> -->
+                </div>
+
+                <br>
+                <p>Simple 3D Action RPG using C++ in Unreal Engine, showcasing comprehensive knowledge of UE5</p>
+                <ul>
+                    <li>Landscaping, terrain sculpting and painting with some level design using Quixel Bridge assets</li>
+                    <li>Foliage painting</li>
+                </ul>
+                <p>TODO</p>
+                <ul>
+                    <li>Character controller, camera, movement</li>
+                    <li>Mobs</li>
+                    <li>Combat</li>
+                    <li>Weapons</li>
+                    <li>AI</li>
+                </ul>
+            </section>
+
+            <br>
+            <hr>
+            <br>
+
+            <section id="showcase-ue5firstgame" class="with-links">
+                <h2>Blueprint Game Scene</h2>
+                <video style="width: 100%;" controls><source src="assets/videos/ue5firstgame.mp4" type=video/mp4></video>
+                <br>
+                <p>Mini game scene in Blueprints, mostly following one of the official </p>
+                <a href="https://dev.epicgames.com/community/learning/tutorials/e2V/your-first-game-in-unreal-engine-5">UE5 tutorials</a>
+                <ul>
+                    <li>Character dynamic movement with animations and audio cues</li>
+                    <li>Props with action functions</li>
+                    <li>Landscaping</li>
+                    <li>Simple AI follower</li>
+                    <li>Foliage</li>
+                </ul>
+            </section>
+
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+</div>
+</body>
+</html>
