@@ -241,6 +241,14 @@ a.showcase-link:hover {
     width: 100%;
 }
 
+.swiper-slide {
+    text-align: center;
+}
+
+.swiper-wrapper {
+    padding-bottom: 25px;
+}
+
 .swiper-slide img {
     width: 100%;
     margin-left: auto;
