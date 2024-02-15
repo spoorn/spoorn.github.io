@@ -54,8 +54,17 @@
                 <ul>
                     <li>Landscaping, foliage painting, environment lighting, terrain sculpting and painting - basic level design</li>
                     <li>Character controller, camera, movement (turning, rotations, jump)</li>
-                    <li>Animation blueprints with C++ animation instances, state machines (idle, run, attacking), animation montages</li>
                     <li>Controls using the new Enhanced Input System</li>
+                    <li>Animations
+                        <ul>
+                            <li>Animation Blueprints extending C++ animation instances</li>
+                            <li>Inverse Kinematics, IK Rigs, IK Retargeting for character animations</li>
+                            <li>State machines (idle, run, attacking, death)</li>
+                            <li>Animation Montages with sound effects, notifications</li>
+                            <li>Motion Warping to warp animations towards a target (e.g. attacks homing in on player)</li>
+                            <li>Animation Blueprint Templates to cleanly share animation functionality across types</li>
+                        </ul>
+                    </li>
                     <li>Combat
                         <ul>
                             <li>Hovering animated weapons, with weapon pickup socketed to character for various animations</li>
@@ -63,14 +72,17 @@
                             <li>Sound and particle effects</li>
                             <li>Weapon damage, enemy health bars, death animations</li>
                             <li>Root Motion animations, and motion warping for more challenging combat</li>
+                            <li>Different mob types with different attack mechanics</li>
+                            <li>Dodge mechanics</li>
                         </ul>
                     </li>
-                    <li>Inverse Kinematics, IK Rigs, IK Retargeting for character animations, and simple editing of animations</li>
+                    <li>Attribute System - Health, Stamina, Souls system with soul drops, Gold from treasure pickups</li>
                     <li>Loot
                         <ul>
                             <li>Breakable Actors using the Fracture system, new Chaos Physics engine and Field Systems generated from weapons</li>
                             <li>Randomly generated loot on actor breakage with pickup sound</li>
                             <li>Glow particle effects for weapons and loot</li>
+                            <li>Souls system</li>
                         </ul>
                     </li>
                     <li>Audio
@@ -91,8 +103,9 @@
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
+                        <div class="swiper-slide" data-swiper-autoplay="21000"><video style="width: 100%;" playsinline autoplay loop muted><source src="assets/videos/ue5echo/ue5echo_raptor.mp4" type=video/mp4></video>Other mob types, sharing functionality with a base type</div>
                         <div class="swiper-slide" data-swiper-autoplay="21000"><video style="width: 100%;" playsinline autoplay loop muted controls controlsList="nodownload"><source src="assets/videos/ue5echo/ue5echo_combat.mp4" type=video/mp4></video>Breakable loot containers and combat</div>
-                        <div class="swiper-slide" data-swiper-autoplay="16000"><video style="width: 100%;" playsinline autoplay loop muted controls controlsList="nodownload"><source src="assets/videos/ue5echo/ue5echo_combat_beginning.mp4" type=video/mp4></video>Weapon hit traces on attack</div>
+                        <div class="swiper-slide" data-swiper-autoplay="16000"><video style="width: 100%;" playsinline autoplay loop muted><source src="assets/videos/ue5echo/ue5echo_combat_beginning.mp4" type=video/mp4></video>Weapon hit traces on attack</div>
                         <div class="swiper-slide"><video style="width: 100%;" playsinline autoplay loop muted><source src="assets/videos/ue5echo/birdfly.mp4" type=video/mp4></video><p>Pawn controller on a bird actor</p></div>
                         <div class="swiper-slide"><video style="width: 100%;" playsinline autoplay loop muted><source src="assets/videos/ue5echo/IKRetargeting.mp4" type=video/mp4></video><p>IK Retargeting for animations</p></div>
                         <div class="swiper-slide"><img style="width: 50%" src="assets/images/ue5echo/footIK.png" alt="echo1"><p>Inverse Kinematics on skeletal mesh legs</p></div>
