@@ -46,7 +46,7 @@
                 <h2><a href="https://github.com/spoorn/UE5MultiplayerFPS">C++ Multiplayer Shooter Game</a></h2>
 
                 <!-- To prevent downloading videos, see https://stackoverflow.com/questions/9756837/prevent-html5-video-from-being-downloaded-right-click-saved -->
-                <video style="width: 100%;" onloadstart="this.playbackRate = 2.0;" playsinline autoplay muted controls controlsList="nodownload"><source src="assets/videos/ue5blaster/ue5blaster_plugin.mp4" type=video/mp4></video>Multiplayer Beginnings
+                <video style="width: 100%;" playsinline autoplay controls controlsList="nodownload"><source src="assets/videos/ue5blaster/ue5blaster_beginnings.mp4" type=video/mp4></video>
 
                 <br>
                 <br>
@@ -58,6 +58,15 @@
                             <ul>
                                 <li>Bundled into a UE Plugin to be shareable: <a href="https://github.com/spoorn/UE5MultiplayerFPS/tree/multiplayerplugin">code</a></li>
                             </ul>
+                            <li>Variable and component replication, conditional replication, replication notify listeners</li>
+                            <li>Client/server guarded logic</li>
+                            <li>Remote Procedure Calls</li>
+                        </ul>
+                    </li>
+                    <li>Simple game and level design: main menu, lobby, game map</li>
+                    <li>HUD
+                        <ul>
+                            <li>Overhead widgets, synced appropriately with clients/server</li>
                         </ul>
                     </li>
                 </ul>
@@ -69,7 +78,7 @@
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
-
+                        <div class="swiper-slide" data-swiper-autoplay="15500"><video style="width: 100%;" onloadstart="this.playbackRate = 2.0;" playsinline autoplay muted controls controlsList="nodownload"><source src="assets/videos/ue5blaster/ue5blaster_plugin.mp4" type=video/mp4></video>Multiplayer Beginnings</div>
                     </div>
                     <!-- If we need pagination -->
                     <div class="swiper-pagination"></div>
@@ -78,7 +87,7 @@
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
 
-                    <!-- If we need scrollbar -->
+                    <!-- If w e need scrollbar -->
                     <!-- <div class="swiper-scrollbar"></div> -->
                 </div>
             </section>
