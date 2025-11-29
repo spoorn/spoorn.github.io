@@ -4,8 +4,8 @@
     <title>projects</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <script src="js/showcase.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <script src="../js/showcase.js" type="text/javascript" defer></script>
 
     <!-- https://swiperjs.com/get-started#use-swiper-from-cdn -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
@@ -17,11 +17,11 @@
 
     <!-- Nav -->
     <nav class="nav">
-        <a class="link" href="index.html">About Me</a>
-        <a class="link" href="projects.html">Projects</a>
-        <a class="link" href="showcase_minecraft.html">Minecraft Showcase</a>
-        <a class="active link" href="showcase_rust.html">Rust Showcase</a>
-        <a class="link" href="showcase_ue5.html">UE5 Showcase</a>
+        <a class="link" href="../index.html">About Me</a>
+        <a class="link" href="../projects/index.html">Projects</a>
+        <a class="link" href="../showcase_minecraft/index.html">Minecraft Showcase</a>
+        <a class="active link" href="index.html">Rust Showcase</a>
+        <a class="link" href="../showcase_ue5/index.html">UE5 Showcase</a>
         <!-- <a class="link" href="contacts.html">Contact</a> -->
     </nav>
 
@@ -44,14 +44,14 @@
             <br>
 
             <section id="showcase-mangovillage" class="with-links">
-                <h2><a href="projects.html#highlights">Mango Village</a></h2>
-                <video style="width: 100%;" playsinline autoplay loop muted><source src="assets/videos/mangovillageclip1.mp4" type=video/mp4></video>
+                <h2><a href="../projects/index.html#highlights">Mango Village</a></h2>
+                <video style="width: 100%;" playsinline autoplay loop muted><source src="../assets/videos/mangovillageclip1.mp4" type=video/mp4></video>
                 <br>
                 <p>Example clip showcasing some game mechanics implemented.</p>
                 <br>
                 <p>Looks simple, but there's a lot going on in the background here!</p>
                 <ul>
-                    <li>Multiplayer with a client/server architecture, using <a href="projects.html#highlights">durian</a>, my own library, as the networking layer.  All the movement and physics is being calculated on the server and sent to the client for rendering.</li>
+                    <li>Multiplayer with a client/server architecture, using <a href="../projects/index.html#highlights">durian</a>, my own library, as the networking layer.  All the movement and physics is being calculated on the server and sent to the client for rendering.</li>
                     <li>Physics system, powered by <a href="https://github.com/dimforge/bevy_rapier">bevy_rapier</a>, an impulse based physics simulator.  The player is modeled as a character controller, with a custom collision system written by me.  I have also looked into XBPD, but the current resources are still immature.</li>
                     <li>Implemented my own Pan-orbit camera system with 3d controls, with a locked follow camera mode on the player</li>
                     <li>Meshes are generated as .gltf/.glb files from Blender models</li>
@@ -64,14 +64,14 @@
             <br>
 
             <section id="showcase-mediatoascii" class="with-links">
-                <h2><a href="projects.html#minecraft-mods">media-to-ascii Examples</a></h2>
+                <h2><a href="../projects/index.html#minecraft-mods">media-to-ascii Examples</a></h2>
 
-                <video style="width: 50%;" src="assets/videos/mediatoascii1.mp4" playsinline autoplay loop muted></video>
+                <video style="width: 50%;" src="../assets/videos/mediatoascii1.mp4" playsinline autoplay loop muted></video>
                 <br>
                 <p>Ascii videos!?!???!?</p>
                 <br>
-                <img style="width: 50%;" src="assets/images/mediatoascii1.jpg" alt="mediatoascii">
-                <img style="width: 100%;" src="assets/images/mediatoascii2.jpg" alt="mediatoascii">
+                <img style="width: 50%;" src="../assets/images/mediatoascii1.jpg" alt="mediatoascii">
+                <img style="width: 100%;" src="../assets/images/mediatoascii2.jpg" alt="mediatoascii">
                 <br>
                 <p>And high quality ascii images of course</p>
             </section>
@@ -82,13 +82,13 @@
 
             <section id="showcase-donut" class="with-links">
                 <h2>Blender donut</h2>
-                <video style="width: 40%;" playsinline autoplay loop muted><source src="assets/videos/donut.mp4" type=video/mp4></video>
+                <video style="width: 40%;" playsinline autoplay loop muted><source src="../assets/videos/donut.mp4" type=video/mp4></video>
                 <br>
                 <p>Rendered in Blender 3.6.1 LTS, following the classic</p>
                 <a href="https://www.youtube.com/playlist?list=PLjEaoINr3zgFX8ZsChQVQsuDSjEqdWMAD">Blender Donut Tutorial</a>
                 <br>
                 <p>Used this to learn some 3d modeling when working on </p>
-                <a href="showcase_rust.html#mango-village>"Mango Village</a>
+                <a href="index.html#mango-village>" Mango Village</a>
             </section>
 
             <br>

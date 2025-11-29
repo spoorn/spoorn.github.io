@@ -4,9 +4,9 @@
     <title>projects</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <script src="js/showcase.js" type="text/javascript" defer></script>
-    <script src="js/backtotop.js" type="text/javascript" defer></script>
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <script src="../js/showcase.js" type="text/javascript" defer></script>
+    <script src="../js/backtotop.js" type="text/javascript" defer></script>
 
     <!-- https://swiperjs.com/get-started#use-swiper-from-cdn -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
@@ -18,11 +18,11 @@
 
     <!-- Nav -->
     <nav class="nav">
-        <a class="link" href="index.html">About Me</a>
-        <a class="link" href="projects.html">Projects</a>
-        <a class="link" href="showcase_minecraft.html">Minecraft Showcase</a>
-        <a class="link" href="showcase_rust.html">Rust Showcase</a>
-        <a class="active link" href="showcase_ue5.html">UE5 Showcase</a>
+        <a class="link" href="../index.html">About Me</a>
+        <a class="link" href="../projects/index.html">Projects</a>
+        <a class="link" href="../showcase_minecraft/index.html">Minecraft Showcase</a>
+        <a class="link" href="../showcase_rust/index.html">Rust Showcase</a>
+        <a class="active link" href="index.html">UE5 Showcase</a>
         <!-- <a class="link" href="contacts.html">Contact</a> -->
     </nav>
 
@@ -31,7 +31,7 @@
 <!-- For jumping to top of page -->
 <a id="top"></a>
 
-<button onclick="topFunction()" id="back-to-top-button" title="Go to top"><img src="assets/images/back-to-top.png" alt="back-to-top"></button>
+<button onclick="topFunction()" id="back-to-top-button" title="Go to top"><img src="../assets/images/back-to-top.png" alt="back-to-top"></button>
 
 <div id="showcase-wrapper">
     <div class="page-content">
@@ -65,7 +65,7 @@
                 <h2><a href="https://github.com/spoorn/UE5MultiplayerFPS">C++ Multiplayer Shooter Game</a></h2>
 
                 <!-- To prevent downloading videos, see https://stackoverflow.com/questions/9756837/prevent-html5-video-from-being-downloaded-right-click-saved -->
-                <video style="width: 100%;" playsinline autoplay controls controlsList="nodownload"><source src="assets/videos/ue5blaster/ue5blaster_beginnings.mp4" type=video/mp4></video>
+                <video style="width: 100%;" playsinline autoplay controls controlsList="nodownload"><source src="../assets/videos/ue5blaster/ue5blaster_beginnings.mp4" type=video/mp4></video>
 
                 <br>
                 <br>
@@ -99,8 +99,8 @@
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
-                        <div class="swiper-slide" data-swiper-autoplay="15500"><video style="width: 100%;" playsinline autoplay muted controls controlsList="nodownload"><source src="assets/videos/ue5blaster/ue5blaster_weapon.mp4" type=video/mp4></video>Equipping weapons with animations, using Replication and RPCs</div>
-                        <div class="swiper-slide" data-swiper-autoplay="15500"><video style="width: 100%;" onloadstart="this.playbackRate = 2.0;" playsinline autoplay muted controls controlsList="nodownload"><source src="assets/videos/ue5blaster/ue5blaster_plugin.mp4" type=video/mp4></video>Multiplayer Beginnings</div>
+                        <div class="swiper-slide" data-swiper-autoplay="15500"><video style="width: 100%;" playsinline autoplay muted controls controlsList="nodownload"><source src="../assets/videos/ue5blaster/ue5blaster_weapon.mp4" type=video/mp4></video>Equipping weapons with animations, using Replication and RPCs</div>
+                        <div class="swiper-slide" data-swiper-autoplay="15500"><video style="width: 100%;" onloadstart="this.playbackRate = 2.0;" playsinline autoplay muted controls controlsList="nodownload"><source src="../assets/videos/ue5blaster/ue5blaster_plugin.mp4" type=video/mp4></video>Multiplayer Beginnings</div>
                     </div>
                     <!-- If we need pagination -->
                     <div class="swiper-pagination"></div>
@@ -125,7 +125,7 @@
                 <h2><a href="https://github.com/spoorn/UE5Slash">C++ Comprehensive Action RPG Game</a></h2>
 
                 <!-- To prevent downloading videos, see https://stackoverflow.com/questions/9756837/prevent-html5-video-from-being-downloaded-right-click-saved -->
-                <video style="width: 100%;" playsinline autoplay loop muted controls controlsList="nodownload"><source src="assets/videos/ue5echo/ue5echo_final.mp4" type=video/mp4></video>
+                <video style="width: 100%;" playsinline autoplay loop muted controls controlsList="nodownload"><source src="../assets/videos/ue5echo/ue5echo_final.mp4" type=video/mp4></video>
                 
                 <br>
                 <br>
@@ -182,18 +182,18 @@
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
-                        <div class="swiper-slide" data-swiper-autoplay="21000"><video style="width: 100%;" playsinline autoplay loop muted controls controlsList="nodownload"><source src="assets/videos/ue5echo/ue5echo_combat2.mp4" type=video/mp4></video>Combat</div>
-                        <div class="swiper-slide" data-swiper-autoplay="21000"><video style="width: 100%;" playsinline autoplay loop muted><source src="assets/videos/ue5echo/ue5echo_raptor.mp4" type=video/mp4></video>Other mob types, sharing functionality with a base type</div>
-                        <div class="swiper-slide" data-swiper-autoplay="21000"><video style="width: 100%;" playsinline autoplay loop muted controls controlsList="nodownload"><source src="assets/videos/ue5echo/ue5echo_combat.mp4" type=video/mp4></video>Breakable loot containers and combat</div>
-                        <div class="swiper-slide" data-swiper-autoplay="16000"><video style="width: 100%;" playsinline autoplay loop muted><source src="assets/videos/ue5echo/ue5echo_combat_beginning.mp4" type=video/mp4></video>Weapon hit traces on attack</div>
-                        <div class="swiper-slide"><video style="width: 100%;" playsinline autoplay loop muted><source src="assets/videos/ue5echo/birdfly.mp4" type=video/mp4></video><p>Pawn controller on a bird actor</p></div>
-                        <div class="swiper-slide"><video style="width: 100%;" playsinline autoplay loop muted><source src="assets/videos/ue5echo/IKRetargeting.mp4" type=video/mp4></video><p>IK Retargeting for animations</p></div>
-                        <div class="swiper-slide"><img style="width: 50%" src="assets/images/ue5echo/footIK.png" alt="echo1"><p>Inverse Kinematics on skeletal mesh legs</p></div>
-                        <div class="swiper-slide"><img style="width: 100%" src="assets/images/ue5echo/HighresScreenshot00000.png" alt="echo2"><p>Environment lighting</p></div>
-                        <div class="swiper-slide"><img style="width: 100%" src="assets/images/ue5echo/HighresScreenshot00001.png" alt="echo3"><p>Landscaping, terrain sculpting and painting, basic level design</p></div>
-                        <div class="swiper-slide"><img style="width: 100%" src="assets/images/ue5echo/HighresScreenshot00002.png" alt="echo4"><p>Simple dungeon using Quixel Bridge assets</p></div>
-                        <div class="swiper-slide"><img style="width: 100%" src="assets/images/ue5echo/HighresScreenshot00003.png" alt="echo5"><p>Foliage painting with backdrop assets</p></div>
-                        <div class="swiper-slide"><img style="width: 100%" src="assets/images/ue5echo/HighresScreenshot00004.png" alt="echo6"></div>
+                        <div class="swiper-slide" data-swiper-autoplay="21000"><video style="width: 100%;" playsinline autoplay loop muted controls controlsList="nodownload"><source src="../assets/videos/ue5echo/ue5echo_combat2.mp4" type=video/mp4></video>Combat</div>
+                        <div class="swiper-slide" data-swiper-autoplay="21000"><video style="width: 100%;" playsinline autoplay loop muted><source src="../assets/videos/ue5echo/ue5echo_raptor.mp4" type=video/mp4></video>Other mob types, sharing functionality with a base type</div>
+                        <div class="swiper-slide" data-swiper-autoplay="21000"><video style="width: 100%;" playsinline autoplay loop muted controls controlsList="nodownload"><source src="../assets/videos/ue5echo/ue5echo_combat.mp4" type=video/mp4></video>Breakable loot containers and combat</div>
+                        <div class="swiper-slide" data-swiper-autoplay="16000"><video style="width: 100%;" playsinline autoplay loop muted><source src="../assets/videos/ue5echo/ue5echo_combat_beginning.mp4" type=video/mp4></video>Weapon hit traces on attack</div>
+                        <div class="swiper-slide"><video style="width: 100%;" playsinline autoplay loop muted><source src="../assets/videos/ue5echo/birdfly.mp4" type=video/mp4></video><p>Pawn controller on a bird actor</p></div>
+                        <div class="swiper-slide"><video style="width: 100%;" playsinline autoplay loop muted><source src="../assets/videos/ue5echo/IKRetargeting.mp4" type=video/mp4></video><p>IK Retargeting for animations</p></div>
+                        <div class="swiper-slide"><img style="width: 50%" src="../assets/images/ue5echo/footIK.png" alt="echo1"><p>Inverse Kinematics on skeletal mesh legs</p></div>
+                        <div class="swiper-slide"><img style="width: 100%" src="../assets/images/ue5echo/HighresScreenshot00000.png" alt="echo2"><p>Environment lighting</p></div>
+                        <div class="swiper-slide"><img style="width: 100%" src="../assets/images/ue5echo/HighresScreenshot00001.png" alt="echo3"><p>Landscaping, terrain sculpting and painting, basic level design</p></div>
+                        <div class="swiper-slide"><img style="width: 100%" src="../assets/images/ue5echo/HighresScreenshot00002.png" alt="echo4"><p>Simple dungeon using Quixel Bridge assets</p></div>
+                        <div class="swiper-slide"><img style="width: 100%" src="../assets/images/ue5echo/HighresScreenshot00003.png" alt="echo5"><p>Foliage painting with backdrop assets</p></div>
+                        <div class="swiper-slide"><img style="width: 100%" src="../assets/images/ue5echo/HighresScreenshot00004.png" alt="echo6"></div>
                     </div>
                     <!-- If we need pagination -->
                     <div class="swiper-pagination"></div>
@@ -216,7 +216,7 @@
 
             <section id="showcase-ue5rollaball" class="with-links">
                 <h2><a href="https://github.com/spoorn/UE5RollaBall">C++ RollaBall</a></h2>
-                <video style="width: 100%;" playsinline autoplay loop muted><source src="assets/videos/ue5rollaball.mp4" type=video/mp4></video>
+                <video style="width: 100%;" playsinline autoplay loop muted><source src="../assets/videos/ue5rollaball.mp4" type=video/mp4></video>
                 <br>
                 <p>Mini Rollaball game using C++ in Unreal Engine 5</p>
                 <ul>
@@ -236,7 +236,7 @@
 
             <section id="showcase-ue5topdown" class="with-links">
                 <h2><a href="https://github.com/spoorn/mangovillageue">Top Down Character in C++</a></h2>
-                <video style="width: 100%;" playsinline autoplay loop muted><source src="assets/videos/ue5example1.mp4" type=video/mp4></video>
+                <video style="width: 100%;" playsinline autoplay loop muted><source src="../assets/videos/ue5example1.mp4" type=video/mp4></video>
                 <br>
                 <p>A top down Character Controller, Movement, Game Mode, and Camera written in C++</p>
             </section>
@@ -250,7 +250,7 @@
 
             <section id="showcase-ue5firstgame" class="with-links">
                 <h2><a href="https://github.com/spoorn/UE5FirstGame">Blueprint Game Scene</a></h2>
-                <video style="width: 100%;" controls><source src="assets/videos/ue5firstgame.mp4" type=video/mp4></video>
+                <video style="width: 100%;" controls><source src="../assets/videos/ue5firstgame.mp4" type=video/mp4></video>
                 <br>
                 <p>Mini game scene in Blueprints, mostly following one of the official </p>
                 <a href="https://dev.epicgames.com/community/learning/tutorials/e2V/your-first-game-in-unreal-engine-5">UE5 tutorials</a>

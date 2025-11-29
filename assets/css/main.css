@@ -24,7 +24,7 @@ li:hover {
 }
 
 /* From https://www.steckinsights.com/shorten-length-border-bottom-pure-css/ */
-.link:after {
+.link:after:not(nav) {
     content: "";
     /* This is necessary for the pseudo element to work. */
     display: block;
@@ -40,7 +40,7 @@ li:hover {
     border-bottom-width: thin;
 }
 
-.link:not(.soc):not(.active):hover:after {
+.link:not(.soc):not(.active):hover:after:not(nav) {
     content: "";
     /* This is necessary for the pseudo element to work. */
     display: block;
@@ -93,8 +93,7 @@ a:not(.link):hover {
 .nav a {
     color: #f2f2f2;
     text-align: center;
-    padding: 0.75em 1.26em;
-    padding-top: 0.9em;
+    padding: 0.9em 1.26em 0.9em;
     text-decoration: none;
     font-size: 1em;
 }
